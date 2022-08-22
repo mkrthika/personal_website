@@ -1,0 +1,249 @@
+    *{
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+/* HEADER SECTION */
+header{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    max-height:170px;
+    left:0;
+    top:0;
+    position: absolute;
+    background-image: url("images/back.jpg");
+}
+header h2 , header p{
+    color: black;
+    padding: 10px;
+}
+    
+.fade-in{
+    animation: fadeIn 15s;
+    font-size: 16px;
+}
+
+#profile-img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+}
+nav ul li{
+    color: black;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/*MAIN SECTION*/
+
+#page_container{
+    position: relative;
+    min-height: 100vh;
+}
+main{
+    position: relative;
+    width: 100%;
+    left:0;
+    top:150px;
+    padding-bottom:3rem;
+    background-image: url("images/main_back.jpg");
+    
+    
+}
+
+#about img, #my_skills img{
+    
+    height: auto;
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+#about,#my_skills,#project,#interest,#blog,#contact{
+    
+    padding: 10px;
+    border-bottom: 10px solid black;
+    margin: 0px;
+    
+}
+section p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px;
+    padding: 10px;
+    
+}
+.title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div a{
+    text-decoration: none;
+    color: black;
+    padding:10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:burlywood;
+    margin-left: 15px;
+    border-radius: 10%;
+}
+div a:hover{
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Skills CSS*/
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    background-color: #ddd;
+}
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.python {width: 70%; background-color: #123456;}
+.sql {width: 65%; background-color: #04977D;}
+.boot {width: 40%; background-color: #897654;}
+.sass {width: 80%; background-color: #f44336;}
+.react{width: 60%; background-color: #202020;}
+
+.skill{
+    list-style-type: none;
+    
+}
+.skill i{
+    font-size: 16px;
+    padding: 10px;
+}
+.typing{
+    font-size: 1.6rem;
+    width: 100%;
+    height: auto;
+    animation: typing 5s forwards;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*FOOTER SECTION*/
+footer{
+    position: fixed;
+    left:0;
+    bottom:0;
+    background-image: url("images/back.jpg");
+    color: black;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/*ANIMATIONS*/
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn2{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+@media screen and (min-width:320px) and (max-width:480px)
+{
+    
+    header{
+        font-size: 10px;
+    }
+    header h2 .fade-in{
+        font-size: 10px;
+        margin:0px;
+    }
+    nav ul li{
+        display: inline-block;
+        margin:3px;
+        font-weight: 200;
+        border-bottom:1px solid black;
+        padding: 0px;
+        overflow: hidden;
+        font-size: 10px;
+    }
+    nav a:hover{
+        padding: 0px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px)
+{
+    
+    header{
+        font-size: 15px;
+    }
+    header h2 .fade-in{
+        font-size: 15px;
+        margin:0px;
+    }
+    nav{
+        border: 2px solid black;
+    }
+    nav ul li{
+        display: inline-block;
+        margin:10px;
+        padding:0px;
+        font-weight: 500px;
+        border-bottom:2px solid black;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    nav a{
+        font-weight: bold;
+    }
+    nav a:hover{
+        padding: 5px;
+        
+    }
+}
+

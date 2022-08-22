@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Personal Website</title>
+
+
+        <!-- Include jquery to add new html pages content in main page-->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script> 
+        $(function(){
+            $("#include_about").load("about.html"); 
+            $("#include_skills").load("skills.html");
+            $("#include_project").load("project.html");
+            $("#include_interest").load("interest.html");
+            $("#include_blog").load("blog.html");
+            $("#include_contact").load("contact.html"); 
+            
+        });
+        </script> 
+
+
+    </head>
+    <body>
+        <header>
+            <img id="profile-img" src="images/profile.png" alt="profile"/>
+            <h2>Muthukrthika Sornakanth
+            <p class="fade-in"> --- Associate - Software Developer / Front-end Developer</p>
+        </h2>
+            
+            <nav id="nav-bar">
+                <ul>
+                    <li class="about"><a href="#about">About</a></li>
+                    <li class="my_skills"><a href="#my_skills">My Skills</a></li>
+                    <li class="projects"><a href="#project">Projects</a></li>
+                    <li class="interest"><a href="#interest">Interest</a></li>
+                    <li class="blog"><a href="#blog">Blog</a></li>
+                    <li class="contact"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="page_container">
+                <section id="include_about"></section>
+                <section id="include_skills"></section>
+                <section id="include_project"></section>
+                <section id="include_interest"></section>
+                <section id="include_blog"></section>
+                <section id="include_contact"></section>
+            </div>
+        </main>
+        <footer>
+            <p><i class="fas fa-copyright"> <em>2022 Copyright - Muthukrthika Sornakanth</em></i></p>
+        </footer>
+    </body>
+</html>
